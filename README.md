@@ -1,4 +1,4 @@
-# Minimal "function" example of ni-http-suite
+# Minimal "function" example of [ni-http-suite](https://github.com/digitalfondue/ni-http-suite)
 
 This will build a 9.2mb docker image.
 
