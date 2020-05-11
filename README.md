@@ -16,7 +16,7 @@ podman run -i --rm -p 8080:8080 localhost/ni-http-suite-example/ni-http-suite-ex
 
 # Deploy as a function on gcp cloud run
 
-You must build in docker format (!)
+You must build in docker format (!) if you are using podman, as it seems that gcloud run does not like OCI images.
 
 ```
 podman build --format=docker -f Dockerfile -t ni-http-suite-example/ni-http-suite-example .
