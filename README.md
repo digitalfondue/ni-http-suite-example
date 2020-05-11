@@ -12,13 +12,13 @@ This is based from the blog post of https://jamesward.com/2020/05/07/graalvm-nat
 ```
 podman build -f Dockerfile -t ni-http-suite-example/ni-http-suite-example .
 podman run -i --rm -p 8080:8080 localhost/ni-http-suite-example/ni-http-suite-example:latest
-``
+```
 
 # Deploy as a function on gcp cloud run
 
 You must build in docker format (!)
 
-``
+```
 podman build --format=docker -f Dockerfile -t ni-http-suite-example/ni-http-suite-example .
 podman tag TAG gcr.io/PROJECT_ID/NAME
 podman push gcr.io/PROJECT_ID/NAME
